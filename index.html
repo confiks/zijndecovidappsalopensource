@@ -5,67 +5,99 @@
   <meta name="description" content="Zijn de corona apps al open source? NEE." />
   <meta property="og:title" content="zijndecovidappsalopensource.nl" />
   <meta property="og:description" content="Zijn de corona apps al open source? NEE." />
-  <meta property="og:image" content="https://zijndecovidappsalopensource.nl/rutte-opensource.png" />
+  <meta property="og:image" content="https://zijndecovidappsalopensource.nl/overzicht.png" />
 
   <link rel="stylesheet" href="tables-min.css">
+  <style>
+    * {
+      font-family: Arial;
+    }
+
+    a.nu {
+      text-decoration: none;
+    }
+
+    .glossary {
+      border-bottom: 1px dashed #aaa;
+      text-decoration: none;
+      cursor: help;
+    }
+  </style>
 </head>
 
 <body>
-  <div style="max-width: 600px; margin: 10px auto; text-align: center;">
+  <div style="max-width: 800px; margin: 10px auto; text-align: center;">
     <h1>
       NEE
     </h1>
-    <p>* Het Ministerie van VWS heeft enkel de namen van de organisaties openbaar gemaakt. De rest moeten we vooralsnog <a href="https://docs.google.com/spreadsheets/d/1S22jSACupa4PEW_pxQhKBLvezjawk8CdFfXq26B9rgg">gokken</a>. Dit overzicht wordt bijgewerkt.</p>
+    <p>Zie ook <a href="https://docs.google.com/spreadsheets/d/1S22jSACupa4PEW_pxQhKBLvezjawk8CdFfXq26B9rgg">dit</a> sheet met meer informatie die bij elkaar gesprokkeld is, omdat VWS nog niet echt lekker open is.</p>
+
     <table class="pure-table pure-table-bordered">
       <thead>
         <tr>
           <th style="text-align: center;">Organisatie</th>
-          <th>Naam app</th>
-          <th>Published source</th>
-          <th>Open source</th>
+          <th style="text-align: center;">Naam app</th>
+          <th style="text-align: center;">Methode</th>
+          <th style="text-align: center;">Published source</th>
+          <th style="text-align: center;">Open source</th>
+          <th style="text-align: center;">Opmerkingen</th>
         </tr>
       </thead>
       <tbody>
         <tr>
+          <td>Universiteit Antwerpen e.a.</td>
           <td>Covid19</td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>DDT Consortium</td>
-          <td></td>
-          <td></td>
+          <td>Bluetooth</td>
+          <td>❌ Geclaimed, maar waar dan?</td>
+          <td>❌ Geclaimed, maar waar dan?</td>
           <td></td>
         </tr>
         <tr>
-          <td>Accenture B.V.</td>
-          <td></td>
-          <td></td>
+          <td>DDT: DTACT, digi.me, TNO</td>
+          <td>Geen concrete app, alleen 'framework'</td>
+          <td>?</td>
+          <td>❌ Niet geclaimed</td>
+          <td>❌ Niet geclaimed</td>
           <td></td>
         </tr>
         <tr>
-          <td>Capgemini Nederland BV</td>
+          <td>Accenture</td>
+          <td>Stopp Corona</td>
+          <td>Bluetooth, Wifi, Ultrasoon, Telefoonnummer</td>
+          <td>❌ Niet geclaimed</td>
+          <td>❌ Niet geclaimed</td>
           <td></td>
-          <td></td>
-          <td></td>
+        </tr>
+        <tr>
+          <td>Capgemini</td>
+          <td>AlleenSamen</td>
+          <td>Bluetooth, Telefoonnummer</td>
+          <td>❌ Geclaimed, maar waar dan?</td>
+          <td>❌ Geclaimed, maar waar dan?</td>
+          <td>Lijkt gebaseerd op <a href="https://github.com/covid19cz">https://github.com/covid19cz</a>, die wel open source is, maar <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een identifier uit, willekeurig één van de 100 elk uur, hergebruikt identifiers.">brakke privacywaarborgen heeft</span>.</td>
         </tr>
         <tr>
           <td>ITO</td>
-          <td></td>
-          <td></td>
+          <td>ITO app</td>
+          <td>Bluetooth, <a href="https://github.com/TCNCoalition/TCN">TCN protocol</a></td>
+          <td>✅ <a href="https://github.com/ito-org">(link)</a></td>
+          <td>✅ <a href="https://github.com/ito-org">(link)</a></td>
           <td></td>
         </tr>
         <tr>
-          <td>DEUS BV</td>
-          <td></td>
-          <td></td>
-          <td></td>
+          <td>DEUS</td>
+          <td>WelzijNL</td>
+          <td>Bluetooth</td>
+          <td>❌ Niet geclaimed</td>
+          <td>❌ Niet geclaimed</td>
+          <td>Demo app is hetzelfde als <a href="https://next-step.io/en/">https://next-step.io/en</a></td>
         </tr>
         <tr>
           <td>Sia Partners</td>
-          <td></td>
-          <td></td>
+          <td>Samen onder controle</td>
+          <td>Bluetooth, Telefoonnummer</td>
+          <td>❌ Niet geclaimed</td>
+          <td>❌ Niet geclaimed</td>
           <td></td>
         </tr>
       </tbody>
@@ -76,7 +108,7 @@
     <br />
     <br />
     <video controls src="rutte-opensource.mp4"></video>
-  </center>
+  </div>
 
 </body>
 
