@@ -6,6 +6,8 @@ Deus      38:20 - 44:15
 Ito       44:15 - 51:12
 Sia       51:10 - 58:00
 
+smartblockchain 06:42 - 07:56
+
 (.*?) +(\d\d:\d\d) - (\d\d:\d\d)
 
 ffmpeg -ss 00:14:50 -i input.mp4 -to 00:19:35 -c copy accenture.mp4
@@ -24,3 +26,4 @@ ffmpeg -ss 00:38:20 -to 00:44:15 -i input.mp4 -codec:a aac -b:a 128k -codec:v li
 ffmpeg -ss 00:44:15 -to 00:51:12 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 ito.mp4
 ffmpeg -ss 00:51:10 -to 00:58:00 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 sia.mp4
 
+ffmpeg -ss 00:06:42 -to 00:07:56 -i zes.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 smartblockchain.mp4

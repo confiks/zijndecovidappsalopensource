@@ -2,15 +2,19 @@
 <html>
 <head>
   <title>zijndecovidappsalopensource.nl</title>
-  <meta name="description" content="Zijn de corona apps al open source? NEE." />
+  <meta name="description" content="Zijn de corona apps al open source? Misschien morgen." />
   <meta property="og:title" content="zijndecovidappsalopensource.nl" />
-  <meta property="og:description" content="Zijn de corona apps al open source? NEE." />
-  <meta property="og:image" content="https://zijndecovidappsalopensource.nl/overzicht.png" />
+  <meta property="og:description" content="Zijn de corona apps al open source? Misschien morgen." />
 
   <link rel="stylesheet" href="tables-min.css">
   <style>
     * {
       font-family: Arial;
+    }
+
+    #app-table td {
+      padding-left: 0.5em;
+      padding-right: 0.5em;
     }
 
     a.nu, a img {
@@ -47,13 +51,13 @@ Here be markup abominations
     <p style="color: gray;">Zijn de 7 corona-apps al open source?</p>
 
     <h1>
-      ❌ NEE
+      🕚 Misschien morgen
     </h1>
 
     <p class="introduction-text">Het Ministerie van VWS publiceert na een haastige selectie slechts de namen van 7 BVs en een serie livestreams. Geen aanbestedings&#8203;documenten, geen lijst van experts en hun kwalificaties, geen technisch ontwerp. Maar ook: geen broncode. <a href="https://www.codefor.nl/" target="blank">Code for NL</a> puzzelt alles bij elkaar, en deze site laat helder zien of de apps al open source zijn.</p>
 
     <p>
-      <a href="https://www.codefor.nl">
+      <a href="https://www.codefor.nl" target="blank">
         <img src="codefornl.png" class="logo">
       </a>
       <a href="https://docs.google.com/spreadsheets/d/1S22jSACupa4PEW_pxQhKBLvezjawk8CdFfXq26B9rgg" target="blank">
@@ -64,7 +68,7 @@ Here be markup abominations
       </a>
     </p>
 
-    <table class="pure-table pure-table-bordered">
+    <table id="app-table" class="pure-table pure-table-bordered">
       <thead>
         <tr>
           <th style="text-align: center;">Organisatie</th>
@@ -78,55 +82,55 @@ Here be markup abominations
       <tbody>
         <tr>
           <td>Universiteit Antwerpen e.a.</td>
-          <td>Covid19 <a href="video/antwerpen-intro.mp4">🎞</a></td>
+          <td>Covid19 <a href="video/antwerpen-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth</td>
-          <td>🕚<br /> "In overleg met het Ministerie"</td>
-          <td>🕚<br /></td>
-          <td></td>
+          <td><a href="https://github.com/covid19-alert" target="blank">✅ Github-project</a></td>
+          <td>❌ Geen licentie<br /></td>
+          <td><a href="video/smartblockchain.mp4" target="blank"><img src="smartblockchain.png" class="logo" /></a></td>
         </tr>
         <tr>
           <td>DDT: DTACT, digi.me, TNO</td>
-          <td>Geen concrete app <a href="video/ddt-intro.mp4">🎞</a></td>
+          <td>Geen concrete app <a href="video/ddt-intro.mp4" target="blank">🎞</a></td>
           <td>?</td>
           <td>🕚<br /> "Dit weekend nog openbaar"</td>
           <td>🕚<br /> </td>
-          <td></td>
+          <td>Gaat om toestemming voor delen van data. Doel is open-ended.</td>
         </tr>
         <tr>
           <td>Accenture</td>
-          <td>Stopp Corona <a href="video/accenture-intro.mp4">🎞</a></td>
+          <td>Stopp Corona <a href="video/accenture-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth,<br /> Wifi,<br /> Ultrasoon,<br /> Telefoonnummer</td>
           <td>🕚<br /></td>
           <td>🕚<br /> "Volgende week open source"</td>
-          <td>De Zwitserse app is vanwege <a href="https://www.roteskreuz.at/site/faq-app-stopp-corona/">"Zeitdruck"</a> niet open source. Alexandra van der Tuin: "volgende week open source".</td>
+          <td>De Zwitserse app is vanwege <a href="https://www.roteskreuz.at/site/faq-app-stopp-corona/" target="blank">"Zeitdruck"</a> niet open source. Alexandra van der Tuin: "volgende week open source".</td>
         </tr>
         <tr>
           <td>Capgemini</td>
-          <td>AlleenSamen <a href="video/capgemini-intro.mp4">🎞</a></td>
+          <td>AlleenSamen <a href="video/capgemini-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth,<br /> Telefoonnummer</td>
           <td>🙄<br /> "Die staat al online"</td>
-          <td>🙄<br /> Waar is de Nederlandse versie?</td>
-          <td>Lijkt gebaseerd op <a href="https://github.com/covid19cz">https://github.com/covid19cz</a>, die wel open source is, maar <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een random identifier uit de set van 100, wisselt elk uur, hergebruikt identifiers. Zie de Android repository in registerDevice van LoginVM.kt.">een telefoonnummer op de backend verbindt met 100 'persoonlijke' bluetooth identifers</span>.</td>
+          <td>🙄<br /> Is er wel een Nederlandse versie?</td>
+          <td>Lijkt gebaseerd op <a href="https://github.com/covid19cz" target="blank">https://github.com/covid19cz</a>, die wel open source is, maar <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een random identifier uit de set van 100, wisselt elk uur, hergebruikt identifiers. Zie de Android repository in registerDevice van LoginVM.kt.">een telefoonnummer op de backend verbindt met 100 'persoonlijke' bluetooth identifers</span>.</td>
         </tr>
         <tr>
           <td>ITO</td>
           <td>ITO app <a href="video/ito-intro.mp4">🎞</a></td>
-          <td>Bluetooth<br /> <a href="https://github.com/TCNCoalition/TCN">TCN protocol</a></td>
-          <td>✅ <a href="https://github.com/ito-org">(link)</a></td>
-          <td>✅ <a href="https://github.com/ito-org">(link)</a></td>
+          <td>Bluetooth<br /> <a href="https://github.com/TCNCoalition/TCN" target="blank">TCN protocol</a></td>
+          <td><a href="https://github.com/ito-org" target="blank">✅ Github-project</a></td>
+          <td><a href="https://github.com/ito-org/react-native-app/pull/85" target="blank">🕚 Licentie mist nog</a></td>
           <td>Wordt in het openbaar ontwikkeld 🎉</td>
         </tr>
         <tr>
           <td>DEUS</td>
-          <td>WelzijNL <a href="video/deus-intro.mp4">🎞</a></td>
+          <td>WelzijNL <a href="video/deus-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth,<br /> DP^3T</td>
-          <td>❓<br /> Onduidelijk</td>
-          <td>🙄<br /> Is er wel een Nederlandse versie?</td>
-          <td>Demo app is hetzelfde als <a href="https://next-step.io/en/">https://next-step.io/en</a>, maar dit werd niet erkend tijdens de demo.</td>
+          <td>🔶<br /> <a href="https://github.com/DEUS-BV" target="blank">Github-project</a> bevat fork van DP^3T met <a href="https://github.com/DEUS-BV/covid19-dp3t-ios/commit/54bb82dee3f90197e69f0121ce859f237a17a57a" target="blank">één iOS WIP commit</a>.</td>
+          <td>✅<br /> Mozilla Public License</td>
+          <td>Demo app is hetzelfde als <a href="https://next-step.io/en/" target="blank">https://next-step.io/en</a>, maar dit werd niet erkend tijdens de demo.</td>
         </tr>
         <tr>
           <td>Sia Partners</td>
-          <td>Samen onder controle <a href="video/sia-intro.mp4">🎞</a></td>
+          <td>Samen onder controle <a href="video/sia-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth,<br /> Telefoonnummer,<br /> OpenTrace</td>
           <td>❓<br /> Onduidelijk</td>
           <td>🙄<br /> Is er wel een Nederlandse versie?</td>
@@ -136,7 +140,7 @@ Here be markup abominations
     </table>
     <br />
     <br />
-    <a href="https://www.youtube.com/watch?v=VvEcFsXoDps"><img height="40" src="youtube-live.png" /></a>
+    <a href="https://www.youtube.com/watch?v=VvEcFsXoDps" target="blank"><img height="40" src="youtube-live.png" /></a>
     <br />
     <br />
     <video controls src="rutte-opensource.mp4" poster="rutte-opensource.png" id="rutte-opensource"></video>
