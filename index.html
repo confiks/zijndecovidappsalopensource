@@ -103,7 +103,7 @@ Here be markup abominations
           <td>Bluetooth, Telefoonnummer</td>
           <td>❌<br /> Geclaimd, maar waar dan?</td>
           <td>❌<br /> Geclaimed, maar waar dan?</td>
-          <td>Lijkt gebaseerd op <a href="https://github.com/covid19cz">https://github.com/covid19cz</a>, die wel open source is, maar <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een identifier uit, willekeurig één van de 100 elk uur, hergebruikt identifiers.">brakke privacywaarborgen heeft</span>.</td>
+          <td>Lijkt gebaseerd op <a href="https://github.com/covid19cz">https://github.com/covid19cz</a>, die wel open source is, maar <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een random identifier uit de set van 100, wisselt elk uur, hergebruikt identifiers. Zie de Android repository in registerDevice van LoginVM.kt.">een telefoonnummer op de backend verbindt met 100 'persoonlijke' bluetooth identifers</span>.</td>
         </tr>
         <tr>
           <td>ITO</td>
