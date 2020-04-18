@@ -22,12 +22,24 @@
       text-decoration: none;
       cursor: help;
     }
+
+    .introduction-text {
+      max-width: 600px;
+      margin-left: 100px;
+      text-align: left;
+      font-size: 1.1em;
+    }
+
+    .logo {
+      width: 2em;
+      padding-right: 1em;
+    }
   </style>
 </head>
 
-<!-- 
+<!--
 
-
+Here be markup abominations
 
 -->
 
@@ -39,25 +51,16 @@
       ❌ NEE
     </h1>
 
-    <p style="max-width: 600px; margin-left: 100px; text-align: left;">Het Ministerie van VWS publiceert na een haastige selectie slechts de namen van 7 BVs en een serie livestreams. Geen aanbestedingsdocumenten, geen lijst van experts en hun kwalificaties, maar het allerbelangrijkst: geen broncode. Code for NL <a href="https://docs.google.com/spreadsheets/d/1S22jSACupa4PEW_pxQhKBLvezjawk8CdFfXq26B9rgg">puzzelt alles bij elkaar</a><a href="https://praatmee.codefor.nl/"><img src="slack-logo.png" style="height: 1em; padding-left: 0.25em;"></a>, en deze site laat helder zien of de apps al open source zijn.</p>
+    <p class="introduction-text">Het Ministerie van VWS publiceert na een haastige selectie slechts de namen van 7 BVs en een serie livestreams. Geen aanbestedings-documenten, geen lijst van experts en hun kwalificaties, maar het allerbelangrijkst: geen broncode. <a href="https://www.codefor.nl/" target="blank">Code for NL</a> puzzelt alles bij elkaar, en deze site laat helder zien of de apps al open source zijn.</p>
 
-    <!--
-
-    <div style="text-align: left;">
-      <div style="width: 400px; float: left;">
-        <img src="codefornl.png" width="300" />   
-      </div>
-      <div style="width: 400px; float: left;">
-        <p>
-          <a href="https://praatmee.codefor.nl/">Praat mee met Code for NL <img src="slack-logo.png" height="20" /></a>
-        </p>
-        <p>
-          Iets anders
-        </p>
-      </div>
-    </div>
-
-    -->
+    <p>
+      <a href="https://docs.google.com/spreadsheets/d/1S22jSACupa4PEW_pxQhKBLvezjawk8CdFfXq26B9rgg" target="blank">
+        <img src="sheets-icon.png" class="logo">
+      </a>
+      <a href="https://praatmee.codefor.nl/" target="blank">
+        <img src="slack-logo.png" class="logo">
+      </a>
+    </p>
 
     <table class="pure-table pure-table-bordered">
       <thead>
@@ -91,8 +94,8 @@
           <td>Accenture</td>
           <td>Stopp Corona</td>
           <td>Bluetooth, Wifi, Ultrasoon, Telefoonnummer</td>
-          <td>❌<br /> "Volgende week"</td>
-          <td>❌<br /> "Volgende week"</td>
+          <td>🕚<br /> "Volgende week"</td>
+          <td>🕚<br /> "Volgende week"</td>
           <td>De Zwitserse app is vanwege <a href="https://www.roteskreuz.at/site/faq-app-stopp-corona/">"Zeitdruck"</a> niet open source. Alexandra van der Tuin: "volgende week open source".</td>
         </tr>
         <tr>
