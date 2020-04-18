@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
-set -e
 
 scp * nee:~/web/
+#scp -r video/* nee:~/web/video/
