@@ -1,0 +1,5 @@
+zijndecovidappsalopensource.nl
+
+root * ./
+header / Cache-Control no-store
+file_server

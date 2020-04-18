@@ -1,0 +1,26 @@
+Accenture 14:50 - 19:35
+Capgemini 19:34 - 25:00
+Antwerpen 25:00 - 31:08
+DDT       32:02 - 38:21
+Deus      38:20 - 44:15
+Ito       44:15 - 51:12
+Sia       51:10 - 58:00
+
+(.*?) +(\d\d:\d\d) - (\d\d:\d\d)
+
+ffmpeg -ss 00:14:50 -i input.mp4 -to 00:19:35 -c copy accenture.mp4
+ffmpeg -ss 00:19:34 -i input.mp4 -to 00:25:00 -c copy capgemini.mp4
+ffmpeg -ss 00:25:00 -i input.mp4 -to 00:31:08 -c copy antwerpen.mp4
+ffmpeg -ss 00:32:02 -i input.mp4 -to 00:38:21 -c copy ddt.mp4
+ffmpeg -ss 00:38:20 -i input.mp4 -to 00:44:15 -c copy deus.mp4
+ffmpeg -ss 00:44:15 -i input.mp4 -to 00:51:12 -c copy ito.mp4
+ffmpeg -ss 00:51:10 -i input.mp4 -to 00:58:00 -c copy sia.mp4
+
+ffmpeg -ss 00:14:50 -to 00:19:35 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 accenture.mp4
+ffmpeg -ss 00:19:34 -to 00:25:00 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 capgemini.mp4
+ffmpeg -ss 00:25:00 -to 00:31:08 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 antwerpen.mp4
+ffmpeg -ss 00:32:02 -to 00:38:21 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 ddt.mp4
+ffmpeg -ss 00:38:20 -to 00:44:15 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 deus.mp4
+ffmpeg -ss 00:44:15 -to 00:51:12 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 ito.mp4
+ffmpeg -ss 00:51:10 -to 00:58:00 -i input.mp4 -codec:a aac -b:a 128k -codec:v libx264 -pix_fmt yuv420p -b:v 750k -minrate 400k -maxrate 1000k -bufsize 1500k -vf scale=-1:360 sia.mp4
+
