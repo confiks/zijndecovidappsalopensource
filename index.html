@@ -51,17 +51,18 @@ MRs to https://github.com/confiks/zijndecovidappsalopensource
   <div style="max-width: 800px; margin: 10px auto; text-align: center;">
     <p style="color: gray;">
       Zijn de 7 corona-apps al in te zien of <a href="https://nl.wikipedia.org/wiki/Vrije_software">open source</a>?<br />
-      Stand van zondagavond 19 april:
+      Stand van vrijdagavond 24 april:
     </p>
 
-    <h1 style="text-align: left; width: 500px; margin-left: 200px;">
-      ✅ 2x open source<br />
+    <h1 style="text-align: left; width: 500px; margin-left: 240px;">
+      ✅ 3x open source<br />
       ❌ 3x geen code<br />
-      🔶 1x beperkte bijdrage<br />
-      🕚 1x misschien later
+      🔶 1x beperkte bijdrage
     </h1>
 
-    <p class="introduction-text">Het Ministerie van VWS publiceerde na een haastige selectie slechts de namen van 7 BVs en een serie livestreams. Geen aanmeldings-documenten, geen lijst van experts en hun kwalificaties, geen technisch ontwerp. Maar ook: geen broncode. <a href="https://www.codefor.nl/" target="blank">Code for NL</a> puzzelt alles bij elkaar, en deze site laat helder zien of de apps al open source zijn.</p>
+    <p class="introduction-text">
+      <br />
+    </p>
 
     <p>
       <a href="https://www.codefor.nl" target="blank">
@@ -92,7 +93,6 @@ MRs to https://github.com/confiks/zijndecovidappsalopensource
           <td>Covid19 Alert <a href="video/antwerpen-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth</td>
           <td>
-            🕚 Backend repository is weer offline gehaald<br />
             <a href="https://github.com/covid19-alert" target="blank">✅ Github-project</a>
           </td>
           <td>✅ GPL licentie<br /></td>
@@ -110,9 +110,11 @@ MRs to https://github.com/confiks/zijndecovidappsalopensource
           <td>Accenture</td>
           <td>Stopp Corona <a href="video/accenture-intro.mp4" target="blank">🎞</a></td>
           <td>Bluetooth,<br /> Wifi,<br /> Ultrasoon,<br /> Telefoonnummer</td>
-          <td>🙄<br /> Is er wel een Nederlandse versie?</td>
-          <td>🕚<br /> "Volgende week open source"</td>
-          <td>De Oostenrijkse app is vanwege <a href="https://www.roteskreuz.at/site/faq-app-stopp-corona/" target="blank">"Zeitdruck"</a> niet open source. Alexandra van der Tuin: "volgende week open source".</td>
+          <td>
+            <a href="https://github.com/austrianredcross" target="blank">✅ Github-project</a>
+          </td>
+          <td>✅<br /> Apache 2 licentie</td>
+          <td><span class="glossary" title="Je bent een wandelende cookie 🍪. Zie het gebruik van P2PKit.startDiscovery in DiscoveryRepository.kt van de Android app. De p2pkit documentatie geeft aan dat de eenmalig gegenereerde public key as-is wordt uitgezonden.">Zendt een constante Bluetooth identifier uit</span>. Gebruikt de (closed-source) <a href="http://p2pkit.io">p2pkit</a> library die voor elke interactie de Google Firebase clouddienst gebruikt.</td>
         </tr>
         <tr>
           <td>Capgemini</td>
@@ -120,7 +122,7 @@ MRs to https://github.com/confiks/zijndecovidappsalopensource
           <td>Bluetooth,<br /> Telefoonnummer</td>
           <td>❌<br /> Hebben geen eigen code</td>
           <td>❌<br /> Ze verwijzen slechts naar <a href="https://github.com/covid19cz" target="blank">Covid19CZ</a></td>
-          <td>Covid19CZ is open source maar koppelt <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een random identifier uit de set van 100, wisselt elk uur, hergebruikt identifiers. Zie de Android repository in registerDevice van LoginVM.kt.">je telefoonnummer op de backend met 100 'persoonlijke' bluetooth identifers</span>.</td>
+          <td>Covid19CZ is open source maar koppelt <span class="glossary" title="De app verifieert het telefoonnummer, vraagt op een server 100 bluetooth identifiers op, zendt continu een random identifier uit de set van 100, wisselt elk uur, hergebruikt identifiers. Zie de Android repository in registerDevice van LoginVM.kt.">je telefoonnummer op de backend met 100 'persoonlijke' bluetooth identifiers</span>.</td>
         </tr>
         <tr>
           <td>ITO</td>
